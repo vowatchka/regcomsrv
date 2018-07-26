@@ -2,7 +2,10 @@
 
 import os
 from setuptools import setup, find_packages
-from regcomsrv import __version__
+try:
+	from regcomsrv import __version__
+except ImportError:
+	__version__ = "1.0.2"
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -16,9 +19,8 @@ def read(fname):
 setup(
     name = "regcomsrv",
     version = __version__,
-    # version = '1.0.0',
     packages = find_packages(),
-    install_requires=[],
+    install_requires=["pypiwin32"],
 	exclude_package_data = {},
     package_data = {
         # If any package contains *.txt or *.rst files, include them:

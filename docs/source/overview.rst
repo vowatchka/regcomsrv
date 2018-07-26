@@ -17,6 +17,14 @@
 	
 	pip install regcomsrv
 	
+.. attention::
+
+	Пакет ``regcomsrv`` требует установки пакета ``pypiwin32`` и устанавливает его автоматически. Однако если в процессе установки возникнут ошибки, сообщающие о том, что необходимые пакеты не установлены, то установите их с помощью pip::
+		
+		pip install pypiwin32 
+		
+	Или используйте дистрибутив, который можно скачать по сслыке `https://sourceforge.net/projects/pywin32/files/pywin32/ <https://sourceforge.net/projects/pywin32/files/pywin32/>`_.
+	
 
 .. usage:
 

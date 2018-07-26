@@ -18,7 +18,7 @@
 try:
 	from regcomsrv import __version__, __author__, __copyright__
 except ImportError:
-	__version__, __author__, __copyright__ = '1.0.0', 'Vladimir Saltykov', 'Copyright 2018, Vladimir Saltykov'
+	__version__, __author__, __copyright__ = '1.0.2', 'Vladimir Saltykov', 'Copyright 2018, Vladimir Saltykov'
 
 
 # -- General configuration ---------------------------------------------------

@@ -38,12 +38,12 @@
 """
 
 # Define metadata
-__version__ 	= "1.0.0"
+__version__ 	= "1.0.2"
 __author__ 		= "Vladimir Saltykov"
 __copyright__ 	= "Copyright 2018, Vladimir Saltykov"
 __email__ 		= "vowatchka@mail.ru"
 __license__ 	= "MIT"
-__date__ 		= "2018-07-25"
+__date__ 		= "2018-07-26"
 
 __all__ = ["reg"]
 
