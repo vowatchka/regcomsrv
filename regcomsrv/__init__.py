@@ -38,12 +38,12 @@
 """
 
 # Define metadata
-__version__     = "1.0.2"
+__version__     = "1.0.3"
 __author__      = "Vladimir Saltykov"
 __copyright__   = "Copyright 2018, Vladimir Saltykov"
 __email__       = "vowatchka@mail.ru"
 __license__     = "MIT"
-__date__        = "2018-07-26"
+__date__        = "2018-09-11"
 
 __all__ = ["reg"]
 
@@ -80,15 +80,18 @@ def reg():
 	# parse cmd args
 	args = parser.parse_args()
 	
-	# get module and classes
+	# import  module
 	module = args.module
-	classes = args.classes
-	
-	# import module
 	m = importlib.import_module(module)
 	
+	# get classes from imported module
+	try:
+		classes = [m.__dict__[cls] for cls in args.classes]
+	except KeyError as ex:
+		raise AttributeError("module %r has no attribute %s" % (m.__name__, str(ex)))
+	
 	action = "Registering" if not args.unregister else "Unregistering"
-	print("%s COM servers %s from module %s..." % (action, ", ".join([m.__dict__[cls]._reg_progid_ for cls in classes]), module))
+	print("%s COM servers %s from module %s..." % (action, ", ".join([cls._reg_progid_ for cls in classes]), m.__name__))
 	
 	# register/unregister
-	win32com.server.register.UseCommandLine(*[m.__dict__[cls] for cls in classes])
+	win32com.server.register.UseCommandLine(*classes)

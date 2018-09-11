@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 try:
 	from regcomsrv import __version__
 except ImportError:
-	__version__ = "1.0.2"
+	__version__ = "1.0.3"
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -35,9 +35,6 @@ setup(
     license = "MIT",
     keywords = "regcomsrv registration unregistration register unregister com server",
     url = "https://github.com/vowatchka/regcomsrv",   # project home page, if any
-
-    # tests
-	# test_suite = "jpathpy.tests",
 	
 	# zip
 	zip_safe = True,
