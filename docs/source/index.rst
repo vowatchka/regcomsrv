@@ -11,7 +11,17 @@ regcomsrv
 
 .. note::
 
-	*Версия regcomsrv:* |release|
+	*Версия:* |release| |release-badge|
+	
+	.. |release-badge| image:: https://badge.fury.io/py/regcomsrv.svg
+		:target: https://badge.fury.io/py/regcomsrv
+		
+.. note::
+
+	*Лицензия:* |license-badge|
+	
+	.. |license-badge| image:: https://img.shields.io/github/license/vowatchka/regcomsrv.svg
+		:target: http://choosealicense.com/licenses/mit/
 	
 .. note::
 

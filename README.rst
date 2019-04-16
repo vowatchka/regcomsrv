@@ -1,3 +1,13 @@
+regcomsrv
+=========
+|release-badge| |license-badge|
+
+.. |release-badge| image:: https://badge.fury.io/py/regcomsrv.svg
+	:target: https://badge.fury.io/py/regcomsrv
+	
+.. |license-badge| image:: https://img.shields.io/github/license/vowatchka/regcomsrv.svg
+	:target: http://choosealicense.com/licenses/mit/
+
 Regcomsrv documentation
 -------------------------
 See at https://regcomsrv.readthedocs.io
