@@ -20,7 +20,7 @@ setup(
     name = "regcomsrv",
     version = __version__,
     packages = find_packages(),
-    install_requires=["pypiwin32"],
+    install_requires=["pywin32"],
 	exclude_package_data = {},
     package_data = {
         # If any package contains *.txt or *.rst files, include them:
