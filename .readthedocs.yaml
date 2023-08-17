@@ -5,11 +5,6 @@ build:
   tools:
     python: "3.6"
 
-python:
-  install:
-    - method: setuptools
-      path: .
-
 sphinx:
   configuration: docs/source/conf.py
 
